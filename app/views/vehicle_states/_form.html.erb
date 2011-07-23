@@ -1,0 +1,77 @@
+<%= form_for(@vehicle_state) do |f| %>
+  <% if @vehicle_state.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vehicle_state.errors.count, "error") %> prohibited this vehicle_state from being saved:</h2>
+
+      <ul>
+      <% @vehicle_state.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :timestamp %><br />
+    <%= f.datetime_select :timestamp %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :speed %><br />
+    <%= f.text_field :speed %>
+  </div>
+  <div class="field">
+    <%= f.label :heading %><br />
+    <%= f.text_field :heading %>
+  </div>
+  <div class="field">
+    <%= f.label :odometer %><br />
+    <%= f.text_field :odometer %>
+  </div>
+  <div class="field">
+    <%= f.label :hourmeter %><br />
+    <%= f.text_field :hourmeter %>
+  </div>
+  <div class="field">
+    <%= f.label :battery_voltage %><br />
+    <%= f.text_field :battery_voltage %>
+  </div>
+  <div class="field">
+    <%= f.label :gps_active %><br />
+    <%= f.check_box :gps_active %>
+  </div>
+  <div class="field">
+    <%= f.label :ignition %><br />
+    <%= f.check_box :ignition %>
+  </div>
+  <div class="field">
+    <%= f.label :active_sensors %><br />
+    <%= f.text_field :active_sensors %>
+  </div>
+  <div class="field">
+    <%= f.label :active_actuators %><br />
+    <%= f.text_field :active_actuators %>
+  </div>
+  <div class="field">
+    <%= f.label :panic %><br />
+    <%= f.check_box :panic %>
+  </div>
+  <div class="field">
+    <%= f.label :speed_violation %><br />
+    <%= f.check_box :speed_violation %>
+  </div>
+  <div class="field">
+    <%= f.label :geofence_border_violation %><br />
+    <%= f.check_box :geofence_border_violation %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

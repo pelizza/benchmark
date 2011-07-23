@@ -1,0 +1,51 @@
+<h1>Listing vehicle_states</h1>
+
+<table>
+  <tr>
+    <th>Timestamp</th>
+    <th>Location</th>
+    <th>Speed</th>
+    <th>Heading</th>
+    <th>Odometer</th>
+    <th>Hourmeter</th>
+    <th>Battery voltage</th>
+    <th>Gps active</th>
+    <th>Ignition</th>
+    <th>Active sensors</th>
+    <th>Active actuators</th>
+    <th>Panic</th>
+    <th>Speed violation</th>
+    <th>Geofence border violation</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vehicle_states.each do |vehicle_state| %>
+  <tr>
+    <td><%= vehicle_state.timestamp %></td>
+    <td><%= vehicle_state.location %></td>
+    <td><%= vehicle_state.speed %></td>
+    <td><%= vehicle_state.heading %></td>
+    <td><%= vehicle_state.odometer %></td>
+    <td><%= vehicle_state.hourmeter %></td>
+    <td><%= vehicle_state.battery_voltage %></td>
+    <td><%= vehicle_state.gps_active %></td>
+    <td><%= vehicle_state.ignition %></td>
+    <td><%= vehicle_state.active_sensors %></td>
+    <td><%= vehicle_state.active_actuators %></td>
+    <td><%= vehicle_state.panic %></td>
+    <td><%= vehicle_state.speed_violation %></td>
+    <td><%= vehicle_state.geofence_border_violation %></td>
+    <td><%= vehicle_state.address %></td>
+    <td><%= link_to 'Show', vehicle_state %></td>
+    <td><%= link_to 'Edit', edit_vehicle_state_path(vehicle_state) %></td>
+    <td><%= link_to 'Destroy', vehicle_state, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vehicle state', new_vehicle_state_path %>

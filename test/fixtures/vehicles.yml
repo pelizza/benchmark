@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  registration_plate: MyString
+  renavam: MyString
+  description: MyString
+
+two:
+  registration_plate: MyString
+  renavam: MyString
+  description: MyString

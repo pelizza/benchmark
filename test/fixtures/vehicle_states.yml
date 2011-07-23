@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  timestamp: 2011-07-22 19:52:06
+  location: 1
+  speed: 1.5
+  heading: 1
+  odometer: 1
+  hourmeter: 1
+  battery_voltage: 1.5
+  gps_active: false
+  ignition: false
+  active_sensors: 1
+  active_actuators: 1
+  panic: false
+  speed_violation: false
+  geofence_border_violation: false
+  address: MyString
+
+two:
+  timestamp: 2011-07-22 19:52:06
+  location: 1
+  speed: 1.5
+  heading: 1
+  odometer: 1
+  hourmeter: 1
+  battery_voltage: 1.5
+  gps_active: false
+  ignition: false
+  active_sensors: 1
+  active_actuators: 1
+  panic: false
+  speed_violation: false
+  geofence_border_violation: false
+  address: MyString

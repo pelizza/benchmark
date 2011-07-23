@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  username: postgres
+  password: 
+  database: benchmark_development
+
+test:
+  adapter: postgresql
+  username: postgres
+  password: 
+  database: benchmark_test
+
+production:
+  adapter: postgresql
+  username: postgres
+  password: 
+  database: benchmark_production

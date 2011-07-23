@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Number:</b>
+  <%= @tracking_module.number %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @tracking_module.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_tracking_module_path(@tracking_module) %> |
+<%= link_to 'Back', tracking_modules_path %>

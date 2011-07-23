@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @vehicle_state.timestamp %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @vehicle_state.location %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%= @vehicle_state.speed %>
+</p>
+
+<p>
+  <b>Heading:</b>
+  <%= @vehicle_state.heading %>
+</p>
+
+<p>
+  <b>Odometer:</b>
+  <%= @vehicle_state.odometer %>
+</p>
+
+<p>
+  <b>Hourmeter:</b>
+  <%= @vehicle_state.hourmeter %>
+</p>
+
+<p>
+  <b>Battery voltage:</b>
+  <%= @vehicle_state.battery_voltage %>
+</p>
+
+<p>
+  <b>Gps active:</b>
+  <%= @vehicle_state.gps_active %>
+</p>
+
+<p>
+  <b>Ignition:</b>
+  <%= @vehicle_state.ignition %>
+</p>
+
+<p>
+  <b>Active sensors:</b>
+  <%= @vehicle_state.active_sensors %>
+</p>
+
+<p>
+  <b>Active actuators:</b>
+  <%= @vehicle_state.active_actuators %>
+</p>
+
+<p>
+  <b>Panic:</b>
+  <%= @vehicle_state.panic %>
+</p>
+
+<p>
+  <b>Speed violation:</b>
+  <%= @vehicle_state.speed_violation %>
+</p>
+
+<p>
+  <b>Geofence border violation:</b>
+  <%= @vehicle_state.geofence_border_violation %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @vehicle_state.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicle_state_path(@vehicle_state) %> |
+<%= link_to 'Back', vehicle_states_path %>
